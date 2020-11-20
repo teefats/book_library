@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1, shrink-to-fit=
+no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"href="{% static "css/bootstrap.min.css" %}">
+<title>Hello, world!</title>
+</head>
+<body>
+    
+    {% block content %}
+    <h2>Zagazau</h2>
+    <img src="https://media.newyorker.com/photos/5909523dc14b3c606c103bac/master/pass/Victoria-Island-580.jpg" alt="lagos">
+    <p>Trials and tribulations</p>
+    {% endblock content %}
+
+<script src="{% static "js/jquery.min.js" %}"></script>
+<script src="{% static "js/popper.min.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+</body>
+</html>
