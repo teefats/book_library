@@ -18,3 +18,5 @@ class TestPage(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'trial.html')
         self.assertContains(response, "Zagazau")
+
+    
