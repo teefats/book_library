@@ -18,4 +18,5 @@ class Migration(migrations.Migration):
         migrations.RunPython(
             capitalize,
             migrations.RunPython.noop
+        ),
     ]

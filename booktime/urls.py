@@ -19,6 +19,8 @@ from django.views.generic import TemplateView
 from main import views
 
 urlpatterns = [
+path
+('admin/', admin.site.urls),
 path(
     "contact_us/",
     views.ContactUsView.as_view(template_name="contact_us.html"),
