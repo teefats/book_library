@@ -16,12 +16,22 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
+from main import views
 
 urlpatterns = [
 path(
-"about_us/",
-TemplateView.as_view(template_name="about_us.html")),
+    "contact_us/",
+    views.ContactUsView.as_view(template_name="contact_us.html"),
+    name="contact_us",
+),
 path(
-"",
-TemplateView.as_view(template_name="home.html")),
+    "about_us/",
+    TemplateView.as_view(template_name="about_us.html"), name='about_us'),
+path(
+    "",
+    TemplateView.as_view(template_name="home.html"),name='home'),
+path(
+    "trial/",
+    TemplateView.as_view(template_name="trial.html"), name = 'trial'),
+
 ]

@@ -28,7 +28,7 @@ no">
               <a class="nav-link" href="/about_us">About us</a>
             </li>
             <li class="nav-item {% if request.path == "/trial/" %}active{% endif %}">
-              <a class="nav-link dropdown-toggle" href="/trial">
+              <a class="nav-link" href="/trial">
                 Trial
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -38,8 +38,8 @@ no">
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+            <li class="nav-item {% if request.path == "/contact_us/" %}active{% endif %}">
+              <a class="nav-link" href="/contact_us">Contact </a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
